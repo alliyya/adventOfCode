@@ -1,5 +1,6 @@
 import math
 """
+https://adventofcode.com/2019/day/1
 Usage:
     cat day1_input.txt | python3 day1.py
         > The fuel requirements are xxx
