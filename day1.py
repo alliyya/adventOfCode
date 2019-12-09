@@ -13,7 +13,6 @@ Usage:
 
 def calculate_fuel(fuel):
     fuel = math.floor(fuel / 3.0) - 2.0
-    global fuel_subtotal
     if fuel <= 0:
         return 0
     else:
@@ -21,7 +20,6 @@ def calculate_fuel(fuel):
 
 
 def main():
-    global fuel_subtotal
     total_fuel = 0
     mass = 0
     mass = int(input())
@@ -35,7 +33,6 @@ def main():
             mass = int(input())
         except EOFError:
             break
-        fuel_subtotal = 0
 
     print("The fuel requirements are " + str(total_fuel))
 
