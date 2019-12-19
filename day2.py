@@ -1,7 +1,7 @@
 """
 https://adventofcode.com/2019/day/2
 Usage:
-cat day2_input.txt |  python3 day2.py 
+cat day2_input.txt |  python3 day2.py
 
 """
 import copy
@@ -12,15 +12,20 @@ def get_updated_numbers(numbers):
     while index < len(numbers):
         # getting output value
         output = 0
-        if numbers[index] == 1:
-            output = numbers[numbers[index + 1]] + numbers[numbers[index + 2]]
-        elif numbers[index] == 2:
-            output = numbers[numbers[index + 1]] * numbers[numbers[index + 2]]
-        elif numbers[index] == 99:
-            break
-        else:
-            print("Unexpected Value")
-            break
+        try:
+            if numbers[index] == 1:
+                output = numbers[numbers[index + 1]] + numbers[numbers[index + 2]]
+            elif numbers[index] == 2:
+                output = numbers[numbers[index + 1]] * numbers[numbers[index + 2]]
+            elif numbers[index] == 99:
+                break
+            else:
+                print("Unexpected Value")
+                break
+        except IndexError as e:
+            print("\n!Invalid indexes provided: ", numbers[index: index + 3])
+            print("!Max list index:", len(numbers))
+            print()
 
         numbers[numbers[index + 3]] = output
         index += 4
@@ -59,11 +64,14 @@ def main():
 
     print("Initial Numbers:", *og_numbers, sep=" ")
 
-    # numbers = part_1(og_numbers)
-    numbers = part_2(og_numbers)
+    numbers = part_1(og_numbers)
+    # numbers = part_2(og_numbers)
 
     print("Final Numbers:", *numbers, sep=" ")
-    print("\n100 * noun + verb = ", (100 * numbers[1]) + numbers[2])
+    noun = numbers[1]
+    verb = numbers[2]
+    print("\n100 * noun + verb = ?")
+    print("100 *", noun, "+", verb, " = ", (100 * noun) + verb)
 
 if __name__ == '__main__':
     main()
