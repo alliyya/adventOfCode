@@ -64,8 +64,8 @@ def main():
 
     print("Initial Numbers:", *og_numbers, sep=" ")
 
-    numbers = part_1(og_numbers)
-    # numbers = part_2(og_numbers)
+    # numbers = part_1(og_numbers)
+    numbers = part_2(og_numbers)
 
     print("Final Numbers:", *numbers, sep=" ")
     noun = numbers[1]

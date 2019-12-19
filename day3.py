@@ -1,5 +1,10 @@
 #!/usr/bin/python3
+"""
+https://adventofcode.com/2019/day/3
+Usage:
+cat day3_input.txt |  python3 day3.py
 
+"""
 directions = {
     "R": (1, 0),
     "L": (-1, 0),
@@ -21,15 +26,15 @@ def get_points(line):
     steps = line.split(",")
     points = []
     current = initial_pos
+
     for x in steps:
         direction = x[0]
         size = int(x[1:])
-
         for x in range(0, size):
             current = add(current, directions[direction])
             points.append(current)
 
-    return(set(points))
+    return(points)
 
 
 def closest_intersection(point, points):
@@ -42,6 +47,16 @@ def closest_intersection(point, points):
     return(min(distances))
 
 
+def get_min_steps(points, path1, path2):
+    steps = []
+    for x in points:
+        num1 = path1.index(x)
+        num2 = path2.index(x)
+        steps.append(num1 + num2 + 2)
+
+    return(min(steps))
+
+
 def main():
     line1 = input()
     line2 = input()
@@ -49,9 +64,15 @@ def main():
     path1 = get_points(line1)
     path2 = get_points(line2)
 
-    intersections = path1.intersection(path2)
+    intersections = list(set(path1).intersection(set(path2)))
+
+    # part 1
     min_dist = closest_intersection(initial_pos, intersections)
-    print(min_dist)
+    print("Part 1 result:", min_dist)
+
+    # part 2
+    min_steps = get_min_steps(intersections, path1, path2)
+    print("Part 2 result:", min_steps)
 
 
 if __name__ == '__main__':

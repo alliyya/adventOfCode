@@ -16,4 +16,12 @@ Expected Usage:
 `cat day2_input.txt | python3 day2.py`
 
 Language: Python
-_Skills:_ 
+_Skills:_
+
+## Day 3: Crossed Wires (Dec 19th 2019)
+
+Expected Usage:
+`cat day3_input.txt | python3 day3.py`
+
+Language: Python
+_Skills:_ abuse of sets/lists
