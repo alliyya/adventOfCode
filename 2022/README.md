@@ -18,5 +18,21 @@ Uncomment out the appropriate solution desired.
 
 Language: Python
 
+## Day 3: Rucksack Reorganization
+
+Expected Usage:
+`cat day3_input.txt | python3 day3.py`
+Uncomment out the appropriate solution desired.
+
+Language: Python
+
+## Day 4: Rucksack Reorganization
+
+Expected Usage:
+`cat day4_input.txt | python3 day4.py`
+Uncomment out the appropriate solution desired.
+
+Language: Python
+
 
 
