@@ -17,6 +17,7 @@ Expected Usage:
 Uncomment out the appropriate solution desired.
 
 Language: Python
+Data structures used: Lists
 
 ## Day 3: Rucksack Reorganization
 
@@ -25,14 +26,16 @@ Expected Usage:
 Uncomment out the appropriate solution desired.
 
 Language: Python
+Data structures used: Sets & Lists
 
-## Day 4: Rucksack Reorganization
+## Day 4: Camp Cleanup
 
 Expected Usage:
 `cat day4_input.txt | python3 day4.py`
-Uncomment out the appropriate solution desired.
+Both solutions will be outputted
 
 Language: Python
+Data structures used: Sets & Lists
 
 
 
