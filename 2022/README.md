@@ -36,6 +36,14 @@ Both solutions will be outputted
 
 Language: Python
 Data structures used: Sets & Lists
+## Day 5: Supply Stacks
+
+Expected Usage:
+`cat day5_input.txt | python3 day5.py`
+Both solutions will be outputted
+
+Language: Python
+Data structures used: Sets & Lists
 
 
 
