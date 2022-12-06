@@ -43,6 +43,14 @@ Expected Usage:
 Both solutions will be outputted
 
 Language: Python
+Data structures used: Lists
+## Day 6: Tuning Trouble
+
+Expected Usage:
+`cat day5_input.txt | python3 day5.py`
+Both solutions will be outputted
+
+Language: Python
 Data structures used: Sets & Lists
 
 
