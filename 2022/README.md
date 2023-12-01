@@ -47,7 +47,16 @@ Data structures used: Lists
 ## Day 6: Tuning Trouble
 
 Expected Usage:
-`cat day5_input.txt | python3 day5.py`
+`cat day6_input.txt | python3 day6.py`
+Both solutions will be outputted
+
+Language: Python
+Data structures used: Sets & Lists
+
+## Day 7: Tuning Trouble
+
+Expected Usage:
+`cat day7_input.txt | python3 day7.py`
 Both solutions will be outputted
 
 Language: Python
