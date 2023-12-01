@@ -1,6 +1,6 @@
 # Adventofcode
 
-For solutions to coding problems from https://adventofcode.com/2021
+For solutions to coding problems from https://adventofcode.com/2022
 
 ## Day 1: Calorie Counting
 
